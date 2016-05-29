@@ -1,0 +1,26 @@
+<!doctype html>
+<head>
+<title>Player Game Info Retriever</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="java.js"></script>
+</head>
+<body>
+<H1>Player Game Info Retriever</h1>
+<p>Input the Player's in-game name and the API will ask the riot database to match up the name with the Unique player ID
+in order to retrieve the IDs of other people this player has played games with.
+Via that - this API is able to also retrieve the game ID, Player level and in-game unique Masteries each player uses</p>
+<br />
+<br />Summoner Name
+<br />
+<input id="summonerName" />
+<input type="submit" onclick="summonerLookUp();"/>
+<br />
+<br />Summoner Level: <span id="sLevel"></span>
+
+<br />Summoner ID: <span id="sID"></span>
+
+<br />
+<br />Number of Mastery Pages: <span id="masteryPageCount"></span>
+
+<br />First Page's name: <span id="masteryPages1st"></span>
+<br />Other players ID that Player has played with recently : <span id="players"></span>
